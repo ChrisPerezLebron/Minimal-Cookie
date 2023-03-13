@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="757.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.cookieclicker.CookieController">
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cookieclicker.CookieController">
   <items>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="252.0" spacing="20.0">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="320.0" spacing="20.0">
          <children>
             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="600.0" spacing="10.0">
                <children>
                   <Label text="Number of cookies: " />
-                  <Label fx:id="totalCookiesLabel" text="0" />
+                  <Label fx:id="numCookiesLabel" text="0" />
                </children>
             </HBox>
             <HBox alignment="CENTER" prefHeight="38.0" prefWidth="254.0" spacing="10.0">
@@ -27,17 +28,201 @@
       </VBox>
       <VBox alignment="CENTER" prefHeight="398.0" prefWidth="235.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
                <children>
-                  <Label text="Increase Click Rate" />
-                  <Button fx:id="buyClickRateButton" mnemonicParsing="false" onAction="#buyClickRateButtonClick" text="20" textFill="RED" />
+                  <Label text="AutoClick" />
+                  <Button fx:id="autoClickButton" mnemonicParsing="false" onAction="#buyAutoClickButton" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="0.1" />
                </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
             </HBox>
-            <HBox alignment="CENTER" layoutX="10.0" layoutY="159.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="214.0" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
                <children>
-                  <Label text="Increase Passive Cookie" />
-                  <Button fx:id="buyPassiveButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="Grandma" />
+                  <Button fx:id="buyGrandmaButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="0.3" />
                </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="247.0" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="Mr. Baker" />
+                  <Button fx:id="buyMrBakerButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="0.5" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="230.0" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="C-Robot" />
+                  <Button fx:id="buyCRobotButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="1" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="Cookie Farm" />
+                  <Button fx:id="buyCookieFarmButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="3" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="C-Facotory" />
+                  <Button fx:id="buyCFactoryButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="10" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="S-Factory" />
+                  <Button fx:id="buySFactoryButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="20" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="X-Factory" />
+                  <Button fx:id="buyXFactoryButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="40" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="Cookie Cloner" />
+                  <Button fx:id="buyCookieClonerButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="100" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="C-Accelerator" />
+                  <Button fx:id="buyCAcceleratorButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="300" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="Electron Cookie" />
+                  <Button fx:id="buyElectronCookieButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="800" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="Atomic-C" />
+                  <Button fx:id="buyAtomicCButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="1500" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="Cookie Volcano" />
+                  <Button fx:id="buyCookieVolcanoButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="3000" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="497.0" spacing="10.0">
+               <children>
+                  <Label text="Earthquake-C" />
+                  <Button fx:id="buyEarthquakeCButton" mnemonicParsing="false" text="20" textFill="RED" />
+                  <Label text="CPS:" />
+                  <Label text="5000" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" right="10.0" />
+               </padding>
             </HBox>
          </children>
       </VBox>
