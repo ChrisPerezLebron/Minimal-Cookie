@@ -1,0 +1,16 @@
+module dev.chrisperezlebron.cookieclicker {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+    requires org.kordamp.bootstrapfx.core;
+    requires spring.boot.autoconfigure;
+    requires spring.boot;
+    requires spring.context;
+    requires spring.web;
+
+    requires java.sql;
+    requires spring.data.mongodb;
+
+    opens dev.chrisperezlebron.cookieclicker to javafx.fxml;
+    exports dev.chrisperezlebron.cookieclicker;
+}
